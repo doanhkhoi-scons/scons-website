@@ -1,0 +1,55 @@
+.hero{
+    height:90vh;
+
+    display:flex;
+    align-items:center;
+
+    background-image:url("/images/hero/hero.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    position:relative;
+    overflow:hidden;
+    
+}
+.overlay{
+    position:absolute;
+    inset:0;
+
+    background:rgba(0,0,0,.45);
+}
+.content{
+
+    position:relative;
+    z-index:2;
+
+}
+.text {
+    max-width: 650px;
+}
+.eyebrow{
+    color:#d9b96b;
+    font-weight:600;
+    letter-spacing:2px;
+    text-transform:uppercase;
+}
+.title{
+    font-size:64px;
+    color:white;
+    margin:20px 0;
+    line-height:1.1;
+}
+.subtitle{
+    font-size:22px;
+    color:#ddd;
+    margin-bottom:40px;
+}
+.actions{
+    display:flex;
+    gap:20px;
+}
+.buttons{
+    display:flex;
+    gap:20px;
+}

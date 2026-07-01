@@ -1,0 +1,134 @@
+.header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background:#ffffff;
+    z-index:1000;
+    box-shadow:0 2px 12px rgba(0,0,0,.06);
+}
+
+.inner{
+    height:90px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+}
+
+.desktopMenu{
+    display:flex;
+    align-items:center;
+    gap:40px;
+}
+
+.desktopMenu a{
+    text-decoration:none;
+    color:#222;
+    font-size:16px;
+    font-weight:500;
+    transition:.3s;
+}
+
+.desktopMenu a:hover{
+    color:#d62828;
+}
+
+.menuButton{
+    display:none;
+    width:46px;
+    height:46px;
+    border:none;
+    background:none;
+    font-size:34px;
+    cursor:pointer;
+    color:#222;
+}
+
+.overlay{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.45);
+    opacity:0;
+    visibility:hidden;
+    transition:.3s;
+    z-index:1001;
+}
+
+.overlayShow{
+    opacity:1;
+    visibility:visible;
+}
+
+.mobileMenu{
+    position:fixed;
+    top:0;
+    right:-320px;
+    width:300px;
+    height:100vh;
+    background:#ffffff;
+    display:flex;
+    flex-direction:column;
+    padding:90px 30px 40px;
+    gap:28px;
+    transition:.35s;
+    z-index:1002;
+    box-shadow:-10px 0 30px rgba(0,0,0,.15);
+}
+
+.mobileMenuShow{
+    right:0;
+}
+
+.mobileMenu a{
+    text-decoration:none;
+    color:#222;
+    font-size:18px;
+    font-weight:600;
+}
+
+.mobileMenu a:hover{
+    color:#d62828;
+}
+
+.closeButton{
+    position:absolute;
+    top:25px;
+    right:25px;
+    width:42px;
+    height:42px;
+    border:none;
+    background:none;
+    font-size:30px;
+    cursor:pointer;
+}
+
+@media (max-width:991px){
+
+    .desktopMenu{
+        display:none;
+    }
+
+    .menuButton{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+    }
+
+}
+
+@media (min-width:992px){
+
+    .mobileMenu{
+        display:none;
+    }
+
+    .overlay{
+        display:none;
+    }
+
+}

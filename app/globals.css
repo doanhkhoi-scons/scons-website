@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+/* ===========================
+   S.CONS Design System
+=========================== */
+
+:root {
+  /* Brand Colors */
+  --color-primary: #1b1b1b;
+  --color-secondary: #c7a44b;
+
+  /* Background */
+  --color-background: #ffffff;
+  --color-surface: #f7f7f7;
+
+  /* Text */
+  --color-text: #333333;
+  --color-text-light: #777777;
+
+  /* Border */
+  --color-border: #e5e5e5;
+
+  /* Container */
+  --container-width: 1280px;
+
+  /* Radius */
+  --radius: 16px;
+
+  /* Transition */
+  --transition: 0.3s ease;
+}
+
+/* ===========================
+   Base
+=========================== */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-text);
+  font-family: var(--font-be-vietnam);
+
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+html {
+    scroll-behavior: smooth;
+}
